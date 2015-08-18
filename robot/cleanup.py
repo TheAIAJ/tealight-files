@@ -15,4 +15,4 @@ while True:
     move()
     
   else:
-    print('hello')
+    print 'hello'
