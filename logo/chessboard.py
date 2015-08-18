@@ -7,3 +7,5 @@ def vertical():
   move(80)
   turn(90)
   move(10)
+
+chessboard()
