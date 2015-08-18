@@ -18,6 +18,7 @@ while i < 500:
     turn(-1)
   
   elif left_side() != 'fruit' and right_side() != 'fruit' and look() != 'fruit':
-    turn(1)
+    turn(-1)
+    move()
   
   i+= 1
