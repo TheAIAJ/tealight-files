@@ -7,7 +7,7 @@ from tealight.robot import (move,
                             right_side)
 
 i = 0
-while i < 100:
+while i < 1000:
   if look() == 'fruit':
     move()
   
