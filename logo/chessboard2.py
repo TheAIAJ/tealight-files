@@ -22,6 +22,6 @@ def board(side):
     row(side)
     move(side)
     turn(-90)
-    move(side*8)
+    move(side*7)
     
 board(10)
