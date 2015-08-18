@@ -66,6 +66,6 @@ turn(-1)
 for i in range(0,32):
   move()
 turn(-1)
-for i in range(0,28):
+for i in range(0,31):
   move()
 
