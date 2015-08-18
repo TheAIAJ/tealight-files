@@ -22,6 +22,9 @@ while i < 500:
   
   if left_side() != 'fruit' and touch() != 'fruit':
     turn(-1)
+    
+  if look() == 'fruit':
+    move()
   
   if right_side() != 'fruit' and touch() != 'fruit':
     turn(1)
