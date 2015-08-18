@@ -8,5 +8,5 @@ from tealight.robot import (move,
 
 # Add your code here
 
-while look() == 'path':
+while look() == 'fruit':
   move()
