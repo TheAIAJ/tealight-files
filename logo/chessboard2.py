@@ -12,3 +12,5 @@ def row(side):
   for i in range(0,8):
     turn(90)
     move(side)
+
+row(10)
