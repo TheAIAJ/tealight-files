@@ -25,4 +25,4 @@ def board(side):
     move(side*8)
     turn(90)
     
-board(40)
+board(10)
