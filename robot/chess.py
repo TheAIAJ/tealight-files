@@ -10,3 +10,5 @@ from tealight.robot import (move,
 for i in range(0,32):
   move()
 turn(1)
+for i in range(0,30):
+  move()
