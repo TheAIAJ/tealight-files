@@ -20,8 +20,8 @@ def row(side):
 def board(side):
   for i in range(0,8):
     row(side)
-    #move(side)
-    turn(-90)
+    move(side)
+    #turn(-90)
     move(side*8)
     
 board(10)
