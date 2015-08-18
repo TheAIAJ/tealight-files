@@ -1,3 +1,7 @@
 from tealight.logo import (move, turn)
 
-def chessboard
+def chessboard():
+  f
+  
+def vertical():
+  move(80)
