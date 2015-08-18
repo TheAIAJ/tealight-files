@@ -3,6 +3,7 @@ from tealight.logo import (move, turn)
 def chessboard(size):
   for i in range(0,8):
     verticalUp(size)
+    verticalDown(size)
   
 def verticalUp(size):
   move(size * 8)
