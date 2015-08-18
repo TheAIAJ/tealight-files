@@ -15,4 +15,10 @@ def row(side):
     move(side)
     turn(-90)
 
-row(10)
+#row(10)
+
+def board(side):
+  for i in range(0,8):
+    row(side)
+    
+board(10)
