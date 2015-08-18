@@ -14,5 +14,5 @@ while True:
   if touch() == 'fruit':
     move()
     
-  else:
+  #else:
     #print('hello')
