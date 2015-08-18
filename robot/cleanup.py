@@ -18,6 +18,6 @@ while i < 500:
     turn(-1)
   
   elif left_side() != 'fruit' and right_side() != 'fruit':
-    turn(-1)
+    turn(1)
   
   i+= 1
