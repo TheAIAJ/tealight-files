@@ -7,4 +7,5 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-def 
+while True:
+  move()
