@@ -6,7 +6,7 @@ def square(side):
     move(side)
     turn(90)
     
-#square(10)
+square(10)
 
 def row(side):
   for i in range(0,8):
