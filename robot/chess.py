@@ -7,14 +7,3 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-for i in range(0,32):
-  move()
-turn(1)
-for i in range(0,32):
-  move()
-turn(1)
-for i in range(0,32):
-  move()
-turn(1)
-for i in range(0,27):
-  move()
