@@ -6,10 +6,12 @@ from tealight.robot import (move,
                             left_side, 
                             right_side)
 
-# Add your code here
-while True:
+i = 0
+while i < 10000:
   if look() == 'fruit':
     move()
   
   if touch() == 'fruit':
     move()
+
+  i+= 1
