@@ -1,7 +1,7 @@
 from tealight.logo import (move, turn)
 
 def chessboard():
-  f
+  vertical()
   
 def vertical():
   move(80)
