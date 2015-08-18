@@ -20,4 +20,7 @@ while i < 500:
   if left_side() == 'fruit':
     move()
   
+  if left_side() != 'fruit' and touch() != 'fruit':
+    turn(-1)
+  
   i+= 1
