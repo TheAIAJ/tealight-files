@@ -8,9 +8,12 @@ from tealight.robot import (move,
 
 # Add your code here
 
-while touch() == 'fruit':
-  move()
+while True:
+  forward()
 
 if right_side() == 'fruit':
   turn(1)
 
+def forward():
+  while touch() == 'fruit':
+    move()
