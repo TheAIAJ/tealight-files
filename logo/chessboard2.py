@@ -12,7 +12,7 @@ def row(side):
   for i in range(0,8):
     #turn(90)
     #move(side)
-    #turn(-90)
+    turn(-90)
     square(side)
 
 row(10)
