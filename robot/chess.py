@@ -10,3 +10,5 @@ from tealight.robot import (move,
 def square():
   for i in range(0,4):
     move()
+    
+square()
