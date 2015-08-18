@@ -7,5 +7,6 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-while True:
+for i in range(0,32):
   move()
+turn(1)
