@@ -2,6 +2,8 @@ from tealight.logo import (move, turn)
 
 
 def square(side):
-  for i in range(0,3):
+  for i in range(0,4):
     move(side)
-    turn(120)
+    turn(900)
+    
+square(10)
