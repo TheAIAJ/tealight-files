@@ -1,1 +1,1 @@
-from tealight.logo import
+from tealight.logo import (move, turn)
