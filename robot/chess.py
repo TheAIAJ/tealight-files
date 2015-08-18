@@ -72,5 +72,5 @@ turn(-1)
 for i in range(0,4):
   move()
 turn(-1)
-for i in range(0,32):
+for i in range(0,30):
   move()
