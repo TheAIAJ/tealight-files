@@ -67,7 +67,7 @@ def handle_frame():
   print 'y is ' + str(y)
   print 'screen width is ' + str(screen_width)
   
-  if x >= screen_width:
+  if x >= screen_width or x <= 0:
     vx = -vx
     print '-vx'
   
