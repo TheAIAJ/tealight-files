@@ -72,5 +72,5 @@ def handle_frame():
     print '-vx'
   
   if y == screen_height:
-    
+    none
   
