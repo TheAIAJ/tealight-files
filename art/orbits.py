@@ -63,6 +63,9 @@ def handle_frame():
   
   vy += 0.1
   
+  print 'x is ' + x
+  print 'y is ' + y
+  print 'screen width is ' + screen_width
   if x == screen_width:
     vx = -vx
     print '-vx'
