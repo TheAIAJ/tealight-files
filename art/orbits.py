@@ -63,7 +63,7 @@ def handle_frame():
   
   vy += 0.1
   
-  if screen_width == vx or screen_height == vy:
+  if screen_width == vx:
     vx = -vx
     vy = -vy
   
