@@ -50,6 +50,6 @@ def handle_frame():
   
   
   
-  vy = 0.1
+  vy = 0.05
   
   
