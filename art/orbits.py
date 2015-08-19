@@ -53,7 +53,13 @@ def handle_frame():
     vx -= 0.05
   
   if vx < 0:
-    vx += 0.05 
+    vx += 0.05
+    
+  if vy > 0:
+    vy -= 0.05
+  
+  if vy < 0:
+    vy += 0.05
   vy = 0.05
   
   
