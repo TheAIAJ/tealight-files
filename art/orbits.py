@@ -50,6 +50,6 @@ def handle_frame():
   
   
   if ay < 5:
-    ay = 0.1 * power
+    ay = 1
   
   
