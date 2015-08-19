@@ -50,6 +50,6 @@ def handle_frame():
   
   
   if ay < 5:
-    vy = 1 
+    vy = 0.1 
   
   
