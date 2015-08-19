@@ -71,6 +71,6 @@ def handle_frame():
     vx = -vx
     print '-vx'
   
-  if y >= screen_height or <= 0:
+  if y >= screen_height or y <= 0:
     vy = -vy
   
