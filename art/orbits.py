@@ -48,6 +48,8 @@ def handle_frame():
   
   spot(x,y,8)
   
-  ay = power
+  
+  if ay < 5:
+    ay = power
   
   
