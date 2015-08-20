@@ -9,8 +9,6 @@ yArray = [900, 800, 700, 600, 500, 400, 300, 200]
 
 columnCounter = [0, 0, 0, 0, 0, 0, 0, 0]
 
-cCounter1 = 0
-
 x1 = 100
 y1 = 900
 
@@ -48,7 +46,6 @@ def handle_mouseup(x, y):
       color("red")
     else:
       color("yellow")
-    #spot(xArray[0], yArray[0], 40)
     DrawSpot(0, columnCounter[0])
     turn = (turn + 1) % 2
     print turn
