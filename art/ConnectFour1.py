@@ -99,7 +99,6 @@ def change():
 
 def handle_mousemove(x,y):
   global xmove
-  print(x,y)
   #column1
   if 50 < x < 150:
     clear()
