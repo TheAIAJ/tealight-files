@@ -8,4 +8,4 @@ from tealight.art import (line, spot, circle, box, rectangle, image, text,  back
 radius = 10
 
 numCounter = 8
-box(100, 150, radius * numCounter, radius * numCounter) 
+box(200, 150, radius * numCounter, radius * numCounter) 
