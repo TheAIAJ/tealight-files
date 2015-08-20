@@ -55,7 +55,7 @@ def handle_mouseup(x, y):
       color("red")
     else:
       color("yellow")
-    DrawSpot(0, columnCounter[0])
+    DrawSpot(1, columnCounter[1])
     turn = (turn + 1) % 2
     print turn
     
