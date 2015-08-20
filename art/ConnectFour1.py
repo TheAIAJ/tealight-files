@@ -63,7 +63,7 @@ def handle_mouseup(x, y):
   if i <= 7 and columnCounter[i] < 8:
     DrawSpot(i, columnCounter[i])
     turn = (turn + 1) % 2
- 
+ `
 
 def DrawSpot(x, y):
   global columnCounter
