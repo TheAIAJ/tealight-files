@@ -179,3 +179,9 @@ def win(turn, posArray):
           text(225, 45, "Yellow Wins")
         else:
           text(225, 45, "Red Wins")
+
+          
+connect(Connect4)
+send(posArray, echo=True)
+
+print posArray
