@@ -3,7 +3,7 @@
 
 #box(x, y, width, height)
 
-from tealight.art import (line, spot, circle, box, rectangle, image, text,  background, color)
+from tealight.art import (line, spot, circle, box, rectangle, image, text, background, color, screen_width, screen_height)
 
 radius = 10
 
