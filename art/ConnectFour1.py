@@ -46,17 +46,17 @@ def handle_mouseup(x, y):
     i = 0
   elif 150 < x <= 250:
     i = 1
-  elif 150 < x <= 250:
+  elif 250 < x <= 350:
     i = 2
-  elif 150 < x <= 250:
+  elif 350 < x <= 450:
     i = 3
-  elif 150 < x <= 250:
+  elif 450 < x <= 550:
     i = 4
-  elif 150 < x <= 250:
+  elif 550 < x <= 650:
     i = 5
-  elif 150 < x <= 250:
+  elif 650 < x <= 750:
     i = 6
-  elif 150 < x <= 250:
+  elif 750 < x <= 850:
     i = 7
   
   
