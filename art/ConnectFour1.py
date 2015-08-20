@@ -181,7 +181,8 @@ def win(turn, posArray):
           text(225, 45, "Red Wins")
 
           
-connect("Connect4")
-send(posArray, True)
+def handle_frame():
+  connect("Connect4")
+  send(posArray, True)
 
 print posArray
