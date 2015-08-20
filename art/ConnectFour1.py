@@ -9,9 +9,9 @@ radius = 10
 
 numCounter = 8
 
-width = screen_width(
+width = screen_width
 
-height = screen_height()
+height = screen_height
 
 box(200, 150, radius * numCounter, radius * numCounter) 
 
