@@ -4,6 +4,8 @@ from tealight.net import *
 color("blue")
 box(50,950,800,-800)
 
+connect("Connect4")
+
 xArray = [100, 200, 300, 400, 500, 600, 700, 800]
 yArray = [900, 800, 700, 600, 500, 400, 300, 200]
 
@@ -182,7 +184,6 @@ def win(turn, posArray):
 
           
 def handle_frame():
-  connect("Connect4")
   send(posArray, True)
 
 print posArray
