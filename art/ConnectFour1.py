@@ -66,10 +66,77 @@ def handle_mouseup(x, y):
   print turn
   print columnCounter
  
-import handle_mousemove()
 
 def DrawSpot(x, y):
   global columnCounter
   spot(xArray[x], yArray[y], 40)
   if columnCounter[x] < 8:
     columnCounter[x] += 1
+    
+    
+
+    
+    
+def clear():
+  color("white")
+  spot(100, 100, 40)
+  spot(200, 100, 40)
+  spot(300, 100, 40)
+  spot(400, 100, 40)
+  spot(500, 100, 40)
+  spot(600, 100, 40)
+  spot(700, 100, 40)
+  spot(800, 100, 40)
+
+def change():
+  global xmove
+  if turn == 0:
+    color("red")
+    spot(xmove, 100, 40)
+  else:
+    color("yellow")
+    spot(xmove, 100, 40)
+
+def handle_mousemove(x,y):
+  global xmove
+  print(x,y)
+  #column1
+  if 50 < x < 150:
+    clear()
+    xmove = 100
+    change()
+  #column2   
+  if 150 < x < 250:
+    clear()
+    xmove = 200
+    change()
+  #column3   
+  if 250 < x < 350:
+    clear()
+    xmove = 300
+    change()
+  #column4   
+  if 350 < x < 450:
+    clear()
+    xmove = 400
+    change()
+  #column5   
+  if 450 < x < 550:
+    clear()
+    xmove = 500
+    change()
+  #column6   
+  if 550 < x < 650:
+    clear()
+    xmove = 600
+    change()
+  #column7  
+  if 650 < x < 750:
+    clear()
+    xmove = 700
+    change()
+  #column8   
+  if 750 < x < 850:
+    clear()
+    xmove = 800
+    change()
