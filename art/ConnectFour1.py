@@ -182,6 +182,6 @@ def win(turn, posArray):
 
           
 connect("Connect4")
-send(posArray, echo=True)
+send(posArray, True)
 
 print posArray
