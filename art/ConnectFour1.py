@@ -50,6 +50,15 @@ def handle_mouseup(x, y):
     turn = (turn + 1) % 2
     print turn
     
+  if (x > 150) and (x <=250):
+    if turn == 1:
+      color("red")
+    else:
+      color("yellow")
+    DrawSpot(0, columnCounter[0])
+    turn = (turn + 1) % 2
+    print turn
+    
   
 def DrawSpot(x, y):
   global columnCounter
