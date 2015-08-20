@@ -5,7 +5,7 @@
 
 from tealight.art import (line, spot, circle, box, rectangle, image, text, background, color, screen_width, screen_height)
 
-counterRadius = 10
+counterRadius = 50
 
 numCounter = 8
 
