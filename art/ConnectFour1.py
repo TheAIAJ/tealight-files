@@ -41,22 +41,23 @@ for a in range (0,7):
 
 def handle_mouseup(x, y):
   global turn, columnCounter
+  x = x/10
   
-  if 50 < x <= 150:
+  if 5 < x <= 15:
     i = 0
-  elif 150 < x <= 250:
+  elif 15 < x <= 25:
     i = 1
-  elif 250 < x <= 350:
+  elif 25 < x <= 35:
     i = 2
-  elif 350 < x <= 450:
+  elif 35 < x <= 45:
     i = 3
-  elif 450 < x <= 550:
+  elif 45 < x <= 55:
     i = 4
-  elif 550 < x <= 650:
+  elif 55 < x <= 65:
     i = 5
-  elif 650 < x <= 750:
+  elif 65 < x <= 75:
     i = 6
-  elif 750 < x <= 850:
+  elif 75 < x <= 85:
     i = 7
   
   
