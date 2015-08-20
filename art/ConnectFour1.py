@@ -42,19 +42,19 @@ for a in range (0,7):
  y3 += -100
 
 def handle_mouseup(x, y):
-  global turn
+  global turn, columnCounter
   if (x > 50) and (x <=150):
     if turn == 1:
       color("red")
     else:
       color("yellow")
     #spot(xArray[0], yArray[0], 40)
-    DrawSpot(0)
+    DrawSpot(0, columnCounter[0])
     turn = (turn + 1) % 2
     print turn
     
   
-def DrawSpot(i):
+def DrawSpot(x, y):
   global columnCounter
-  spot(xArray[i], yArray[i], 40)
-  columnCounter[i] += 1
+  spot(xArray[x], yArray[y], 40)
+  columnCounter[x] += 1
