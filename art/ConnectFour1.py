@@ -1,5 +1,4 @@
 from tealight.art import (color, line, spot, circle, box, image, text, background)
-from github.huseyinergisi.art.movecounter import *
 ####Variables####
 color("blue")
 box(50,950,800,-800)
