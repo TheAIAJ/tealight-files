@@ -1,10 +1,13 @@
-from tealight.art import (color, line, spot, circle, box, image, text, background)
+from tealight.art import *
+
 ####Variables####
 color("blue")
 box(50,950,800,-800)
 
 xArray = [100, 200, 300, 400, 500, 600, 700, 800]
 yArray = [900, 800, 700, 600, 500, 400, 300, 200]
+
+posArray = [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0]]
 
 columnCounter = [0, 0, 0, 0, 0, 0, 0, 0]
 
@@ -37,7 +40,7 @@ for a in range (0,7):
 ####Gameplay####
 def handle_mouseup(x, y):
   global turn, columnCounter
-  
+  i = -1
   if 50 < x <= 150:
     i = 0
   elif 150 < x <= 250:
@@ -54,25 +57,19 @@ def handle_mouseup(x, y):
     i = 6
   elif 750 < x <= 850:
     i = 7
-  
+  elif x < 50:
+    i = 0
+    
   if turn == 1:
     color("red")
-  else:
+  elif turn ==0:
     color("yellow")
+    
   if i <= 7 and columnCounter[i] < 8:
-    DrawSpot(i, columnCounter[i])
+    DrawSpot(i, columnCounter[i], turn)
+    win(turn, posArray)
     turn = (turn + 1) % 2
-
-def DrawSpot(x, y):
-  global columnCounter
-  spot(xArray[x], yArray[y], 40)
-  if columnCounter[x] < 8:
-    columnCounter[x] += 1
-    
-    
-
-    
-    
+ 
 def clear():
   color("white")
   spot(100, 100, 40)
@@ -89,7 +86,7 @@ def change():
   if turn == 0:
     color("yellow")
     spot(xmove, 100, 40)
-  else:
+  elif turn == 1:
     color("red")
     spot(xmove, 100, 40)
 
@@ -135,3 +132,50 @@ def handle_mousemove(x,y):
     clear()
     xmove = 800
     change()
+
+def DrawSpot(x, y, turn):
+  global columnCounter
+  spot(xArray[x], yArray[y], 40)
+  if columnCounter[x] < 8:
+    columnCounter[x] += 1
+    posArray[y][x] = turn + 1
+   
+def win(turn, posArray):
+  color("Black")
+  font("80px Verdana")
+  #check horizontal
+  turn += 1
+  for p in range(0, len(posArray)):
+    for j in range(0, len(posArray[p]) - 3):
+      if posArray[p][j] == turn and posArray[p][j + 1] == turn and posArray[p][j + 2] == turn and posArray[p][j + 3] == turn:
+        if turn == 1:
+          text(225, 45, "Yellow Wins")
+        else:
+          text(225, 45, "Red Wins")
+    
+  #check vertical
+  for p in range(0, len(posArray) - 3):
+    for j in range(0, len(posArray[p])):
+      if posArray[p][j] == turn and posArray[p + 1][j] == turn and posArray[p + 2][j] == turn and posArray[p + 3][j] == turn:
+        if turn == 1:
+          text(225, 45, "Yellow Wins")
+        else:
+          text(225, 45, "Red Wins")
+  
+  #check diagonal up
+  for p in range(0, len(posArray) - 3):
+    for j in range(0, len(posArray[p]) - 3):
+      if posArray[p][j] == turn and posArray[p + 1][j + 1] == turn and posArray[p + 2][j + 2] == turn and posArray[p + 3][j + 3] == turn:
+        if turn == 1:
+          text(225, 45, "Yellow Wins")
+        else:
+          text(225, 45, "Red Wins")
+  
+  #check diagonal down      
+  for p in range(0, len(posArray)):
+    for j in range(0, len(posArray[p]) - 3):
+      if posArray[p][j] == turn and posArray[p - 1][j + 1] == turn and posArray[p - 2][j + 2] == turn and posArray[p - 3][j + 3] == turn:
+        if turn == 1:
+          text(225, 45, "Yellow Wins")
+        else:
+          text(225, 45, "Red Wins")
