@@ -91,10 +91,10 @@ def clear():
 def change():
   global xmove
   if turn == 0:
-    color("red")
+    color("yellow")
     spot(xmove, 100, 40)
   else:
-    color("yellow")
+    color("red")
     spot(xmove, 100, 40)
 
 def handle_mousemove(x,y):
