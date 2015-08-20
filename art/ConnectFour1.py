@@ -5,7 +5,7 @@
 
 from tealight.art import (line, spot, circle, box, rectangle, image, text, background, color, screen_width, screen_height)
 
-radius = 10
+counterRadius = 10
 
 numCounter = 8
 
@@ -13,8 +13,9 @@ width = screen_width
 
 height = screen_height
 
-box(200, 150, radius * numCounter, radius * numCounter) 
+box(200, 150, counterRadius * numCounter, counterRadius * numCounter) 
 
-for i in range(0, 6):
-  #do something
+boardList = [[], [], [], [], [], [], [], []]
+
+for i in range(0, 8):
   None
