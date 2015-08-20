@@ -41,23 +41,34 @@ for a in range (0,7):
 
 def handle_mouseup(x, y):
   global turn, columnCounter
+  
+  if 50 < x <= 150:
+    i = 0
+  elif 150 < x <= 250:
+    i = 1
+  elif 150 < x <= 250:
+    i = 2
+  elif 150 < x <= 250:
+    i = 3
+  elif 150 < x <= 250:
+    i = 4
+  elif 150 < x <= 250:
+    i = 5
+  elif 150 < x <= 250:
+    i = 6
+  elif 150 < x <= 250:
+    i = 7
+  
   if (x > 50) and (x <=150):
     if turn == 1:
       color("red")
     else:
       color("yellow")
-    DrawSpot(0, columnCounter[0])
+    DrawSpot(i, columnCounter[i])
     turn = (turn + 1) % 2
     print turn
     
-  if (x > 150) and (x <=250):
-    if turn == 1:
-      color("red")
-    else:
-      color("yellow")
-    DrawSpot(1, columnCounter[1])
-    turn = (turn + 1) % 2
-    print turn
+ 
     
   
 def DrawSpot(x, y):
