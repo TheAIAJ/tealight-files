@@ -1,5 +1,5 @@
 from tealight.art import *
-
+from tealight.net import *
 ####Variables####
 color("blue")
 box(50,950,800,-800)
