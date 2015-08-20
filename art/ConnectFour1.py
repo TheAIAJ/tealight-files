@@ -17,3 +17,4 @@ box(200, 150, radius * numCounter, radius * numCounter)
 
 for i in range(0, 6):
   #do something
+  none
