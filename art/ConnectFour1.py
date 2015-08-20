@@ -17,6 +17,12 @@ box(200, 150, counterRadius * numCounter, counterRadius * numCounter)
 
 boardList = [[], [], [], [], [], [], [], []]
 
+columnList = [0, 0, 0, 0, 0, 0, 0, 0]
+
+columnList[0] = 1
+
+print columnList[0]
+
 for i in range(0, 8):
   None
   
