@@ -9,7 +9,7 @@ radius = 10
 
 numCounter = 8
 
-width = screen_width()
+width = screen_width(
 
 height = screen_height()
 
