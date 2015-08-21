@@ -18,6 +18,8 @@ posArray = [[0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 
 
 columnCounter = [0, 0, 0, 0, 0, 0, 0, 0]
 
+counter = 0
+
 x1 = 100
 y1 = 900
 x2 = 150
@@ -40,6 +42,12 @@ def handle_message(message):
       elif posArray[y][x] == 2:
         color("red")
         spot(xArray[x], yArray[y], 40)
+  if turn == 1 and counter == 0:
+    text(225, 45, "Yellow Wins")
+    counter += 1
+  elif turn == 2 and counter == 0:
+    text(225, 45, "Red Wins")
+    counter += 1
   
 ####Board######
 for j in range (0,8):
@@ -162,9 +170,7 @@ def DrawSpot(x, y, turn):
     columnCounter[x] += 1
     posArray[y][x] = turn + 1
    
-    
-counter = 0
-    
+        
 def win(turn, posArray):
   global counter
   color("Black")
