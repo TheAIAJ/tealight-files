@@ -29,6 +29,10 @@ y3 = 850
 
 turn = 0
 
+message = [columnCounter, posArray, turn]
+          
+send(message, False)
+
 def handle_message(message):
   global counter
   columnCounter = message[0]
@@ -96,6 +100,8 @@ def handle_mouseup(x, y):
     DrawSpot(i, columnCounter[i], turn)
     win(turn, posArray)
     turn = (turn + 1) % 2
+    message = [columnCounter, posArray, turn]
+    send(message, False)
  
 def clear():
   color("white")
