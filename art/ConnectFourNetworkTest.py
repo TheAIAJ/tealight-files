@@ -30,6 +30,7 @@ y3 = 850
 turn = 0
 
 def handle_message(message):
+  global counter
   columnCounter = message[0]
   posArray = message[1]
   turn = message[2]
