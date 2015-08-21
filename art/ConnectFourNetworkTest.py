@@ -99,9 +99,10 @@ def handle_mouseup(x, y):
   if i <= 7 and columnCounter[i] < 8:
     DrawSpot(i, columnCounter[i], turn)
     win(turn, posArray)
-    turn = (turn + 1) % 2
     message = [columnCounter, posArray, turn]
     send(message, False)
+    turn = (turn + 1) % 2
+    
  
 def clear():
   color("white")
