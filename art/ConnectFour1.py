@@ -144,7 +144,11 @@ def DrawSpot(x, y, turn):
     columnCounter[x] += 1
     posArray[y][x] = turn + 1
    
+    
+counter = 0
+    
 def win(turn, posArray):
+  global counter
   color("Black")
   font("80px Verdana")
   #check horizontal
@@ -152,9 +156,9 @@ def win(turn, posArray):
   for p in range(0, len(posArray)):
     for j in range(0, len(posArray[p]) - 3):
       if posArray[p][j] == turn and posArray[p][j + 1] == turn and posArray[p][j + 2] == turn and posArray[p][j + 3] == turn:
-        if turn == 1:
+        if turn == 1 and counter == 0:
           text(225, 45, "Yellow Wins")
-        else:
+        elif turn == 2 and counter == 0:
           text(225, 45, "Red Wins")
     
   #check vertical
@@ -163,7 +167,7 @@ def win(turn, posArray):
       if posArray[p][j] == turn and posArray[p + 1][j] == turn and posArray[p + 2][j] == turn and posArray[p + 3][j] == turn:
         if turn == 1:
           text(225, 45, "Yellow Wins")
-        else:
+        elif turn == 0:
           text(225, 45, "Red Wins")
   
   #check diagonal up
@@ -183,3 +187,5 @@ def win(turn, posArray):
           text(225, 45, "Yellow Wins")
         else:
           text(225, 45, "Red Wins")
+         
+
