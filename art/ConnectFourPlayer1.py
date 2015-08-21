@@ -92,7 +92,7 @@ def handle_mouseup(x, y):
     i = 0
     
   if turn == 1:
-    color("red")
+    None
   elif turn ==0:
     color("yellow")
     
