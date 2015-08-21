@@ -45,6 +45,7 @@ def handle_message(message):
         spot(xArray[x], yArray[y], 40)
   print "win test"
   win(turn, posArray)
+  print "win after"
   
 ####Board######
 for j in range (0,8):
