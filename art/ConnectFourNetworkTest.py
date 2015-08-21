@@ -37,6 +37,9 @@ def handle_message(message):
       if posArray[y][x] == 1:
         color("yellow")
         spot(xArray[x], yArray[y], 40)
+      elif posArray[y][x] == 2:
+        color("red")
+        spot(xArray[x], yArray[y], 40)
   
 ####Board######
 for j in range (0,8):
