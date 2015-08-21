@@ -158,9 +158,11 @@ def win(turn, posArray):
       if posArray[p][j] == turn and posArray[p][j + 1] == turn and posArray[p][j + 2] == turn and posArray[p][j + 3] == turn:
         if turn == 1 and counter == 0:
           text(225, 45, "Yellow Wins")
+          counter += 1
         elif turn == 2 and counter == 0:
           text(225, 45, "Red Wins")
-    
+          counter += 1
+  print counter  
   #check vertical
   for p in range(0, len(posArray) - 3):
     for j in range(0, len(posArray[p])):
