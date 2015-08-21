@@ -180,6 +180,9 @@ def win(turn, posArray):
   font("80px Verdana")
   #check horizontal
   turn += 1
+  
+  print "in win"
+  
   for p in range(0, len(posArray)):
     for j in range(0, len(posArray[p]) - 3):
       if posArray[p][j] == turn and posArray[p][j + 1] == turn and posArray[p][j + 2] == turn and posArray[p][j + 3] == turn:
