@@ -43,12 +43,7 @@ def handle_message(message):
       elif posArray[y][x] == 2:
         color("red")
         spot(xArray[x], yArray[y], 40)
-  if turn == 1 and counter == 0:
-    text(225, 45, "Yellow Wins")
-    counter += 1
-  elif turn == 2 and counter == 0:
-    text(225, 45, "Red Wins")
-    counter += 1
+  win(turn, posArray)
   
 ####Board######
 for j in range (0,8):
