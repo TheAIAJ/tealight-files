@@ -43,6 +43,7 @@ def handle_message(message):
       elif posArray[y][x] == 2:
         color("red")
         spot(xArray[x], yArray[y], 40)
+  print "win test"
   win(turn, posArray)
   
 ####Board######
