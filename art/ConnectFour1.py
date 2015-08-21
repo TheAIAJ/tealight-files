@@ -1,10 +1,12 @@
+#By: Huseyin Ergisi, Ryan Gregory, Andrew Jeffery
+#GitHub: huseyinergisi, Rhino5651, TheAIAJ
 from tealight.art import *
-from tealight.net import *
+
 ####Variables####
+font("80px Arial")
+text(275,1030,"Connect 4")
 color("blue")
 box(50,950,800,-800)
-
-connect("Connect4")
 
 xArray = [100, 200, 300, 400, 500, 600, 700, 800]
 yArray = [900, 800, 700, 600, 500, 400, 300, 200]
@@ -181,9 +183,3 @@ def win(turn, posArray):
           text(225, 45, "Yellow Wins")
         else:
           text(225, 45, "Red Wins")
-
-          
-def handle_frame():
-  send(posArray, True)
-
-print posArray
