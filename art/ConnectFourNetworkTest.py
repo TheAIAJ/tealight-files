@@ -31,10 +31,6 @@ def handle_message(message):
   columnCounter = message[0]
   posArray = message[1]
   turn = message[2]
-  spot(xArray[x], yArray[y], 40)
-  if columnCounter[x] < 8:
-    columnCounter[x] += 1
-    posArray[y][x] = turn + 1
     
   for y in range(0, 8):
     for x in range(0, 8):
