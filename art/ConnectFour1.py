@@ -167,27 +167,33 @@ def win(turn, posArray):
   for p in range(0, len(posArray) - 3):
     for j in range(0, len(posArray[p])):
       if posArray[p][j] == turn and posArray[p + 1][j] == turn and posArray[p + 2][j] == turn and posArray[p + 3][j] == turn:
-        if turn == 1:
+        if turn == 1 and counter == 0:
           text(225, 45, "Yellow Wins")
-        elif turn == 0:
+          counter += 1
+        elif turn == 2 and counter == 0:
           text(225, 45, "Red Wins")
+          counter += 1
   
   #check diagonal up
   for p in range(0, len(posArray) - 3):
     for j in range(0, len(posArray[p]) - 3):
       if posArray[p][j] == turn and posArray[p + 1][j + 1] == turn and posArray[p + 2][j + 2] == turn and posArray[p + 3][j + 3] == turn:
-        if turn == 1:
+        if turn == 1 and counter == 0:
           text(225, 45, "Yellow Wins")
-        else:
+          counter += 1
+        elif turn == 2 and counter == 0:
           text(225, 45, "Red Wins")
+          counter += 1
   
   #check diagonal down      
   for p in range(0, len(posArray)):
     for j in range(0, len(posArray[p]) - 3):
       if posArray[p][j] == turn and posArray[p - 1][j + 1] == turn and posArray[p - 2][j + 2] == turn and posArray[p - 3][j + 3] == turn:
-        if turn == 1:
+        if turn == 1 and counter == 0:
           text(225, 45, "Yellow Wins")
-        else:
+          counter += 1
+        elif turn == 2 and counter == 0:
           text(225, 45, "Red Wins")
+          counter += 1
          
 
