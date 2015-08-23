@@ -9,13 +9,16 @@ def segment(scale, detail):
     None
   else:
     
+    turn(-45)
+    segment(scale / 2, detail - 1)
+    
     move(scale)
     turn(180)
     move(scale)
     turn(180)
     
-    turn(-45)
-    segment(scale / 2, detail - 1)
+    #turn(-45)
+    #segment(scale / 2, detail - 1)
     
     #move(-scale)
     #turn(90)
