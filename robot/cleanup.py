@@ -30,10 +30,10 @@ while i < 500:
   if touch() == 'fruit' and twoSide:
     turn(-1)
   
-  if look() != 'fruit' and left_side() == 'fruit':
+  if touch() != 'fruit' and left_side() == 'fruit':
     turn(-1)
   
-  if look() != 'fruit' and right_side() == 'fruit':
+  if touch() != 'fruit' and right_side() == 'fruit':
     turn(1)
   
   i+= 1
