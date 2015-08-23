@@ -23,5 +23,8 @@ while i < 500:
   
   if touch() == 'fruit' and noSide:
     move()
+    
+  if touch() == 'fruit' and oneSide:
+    move()
   
   i+= 1
