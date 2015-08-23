@@ -14,5 +14,6 @@ while i < 1250:
     
   elif right_side() != 'wall':
     turn(1)
+    move()
   elif right_side() == 'wall':
     move()
