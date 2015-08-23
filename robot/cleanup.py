@@ -36,10 +36,4 @@ while i < 500:
   if look() != 'fruit' and right_side() == 'fruit':
     turn(1)
   
-  if left_side() == 'fruit':
-    turn(-1)
-  
-  if right_side() == 'fruit':
-    turn(1)
-  
   i+= 1
