@@ -21,5 +21,7 @@ while i < 500:
     elif look() != 'fruit':
       turn(-1)
   
+  if touch() == 'fruit' and noSide:
+    move()
   
   i+= 1
