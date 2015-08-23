@@ -4,10 +4,13 @@ from tealight.logo import move, turn
 
 def segment(scale, detail):
   
-  for i in range(0, 3):
-    move(scale)
-    turn(120)
-    segment(scale / 2, detail - 1)
+  if detail == 0:
+    None
+  else:
+    for i in range(0, 3):
+      move(scale)
+      turn(120)
+      segment(scale / 2, detail - 1)
 
 turn(90)
-segment(200,8)
+segment(200,10)
