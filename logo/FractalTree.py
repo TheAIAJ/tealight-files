@@ -23,4 +23,4 @@ def segment(scale, detail):
     
     
       
-segment(100,4)
+segment(100,1)
