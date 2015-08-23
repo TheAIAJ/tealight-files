@@ -22,7 +22,7 @@ while i < 400:
     move()
     for i in range(0, 4):
       turn(1)
-      if touch() == 'fruit':
+      if touch() == 'fruit' or left_side() == 'fruit' or right_side() == 'fruit':
         break
         
   i += 1
