@@ -4,18 +4,18 @@ from tealight.logo import move, turn
 
 def branchesRight(scale):
   turn(45)
-  move(scale)
+  move(scale/2)
   turn(180)
-  move(scale)
+  move(scale/2)
   turn(135)
   
 def branchesLeft(scale):
   turn(-45)
-  move(scale)
+  move(scale/2)
   turn(180)
-  move(scale)
+  move(scale/2)
   turn(-90)
-  move(scale)
+  move(scale/2)
   
 
 def segment(scale, detail):
@@ -23,7 +23,7 @@ def segment(scale, detail):
   if detail == 0:
     None
   else:
-    move(scale/2)
+    move(scale)
     
     branchesRight(scale)
     branchesLeft(scale)
