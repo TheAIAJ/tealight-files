@@ -11,6 +11,8 @@ i = 0
 while i < 400:
   if touch() == 'fruit':
     move()
-  #print(touch())
+  
+  i += 1
+
 
     
