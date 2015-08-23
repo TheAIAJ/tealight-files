@@ -42,7 +42,6 @@ while i < 500:
   i+= 1
 """
 
-i = 0
-while i < 500:
-  for i in range(0, 3):
-    move()
+
+for i in range(0, 3):
+  move()
