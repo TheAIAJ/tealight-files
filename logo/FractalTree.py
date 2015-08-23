@@ -3,7 +3,7 @@ from tealight.logo import move, turn
 # Draws the tree fractal
 
 
-def segment(scale, detail, angle):
+def segment(scale, detail, ratio):
   
   if detail == 0:
     None
@@ -11,10 +11,10 @@ def segment(scale, detail, angle):
   else:
     move(scale)
     turn(45)
-    segment(scale / angle, detail - 1)
+    segment(scale / angle, detail - 1, ratio)
     turn(-90)
-    segment(scale / angle, detail - 1)
+    segment(scale / angle, detail - 1, ratio)
     turn(45)
     move(-scale)
 move(-200)    
-segment(200,10, 90)
+segment(200,10,2)
