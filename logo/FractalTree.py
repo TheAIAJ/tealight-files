@@ -12,4 +12,4 @@ def segment(scale, detail):
     segment(scale / 2, detail - 1)
     
       
-segment(100,1)
+segment(100,2)
