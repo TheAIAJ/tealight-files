@@ -21,11 +21,9 @@ while i < 500:
   
   if touch() != 'fruit' and left_side() == 'fruit':
     turn(-1)
-    move()
   
   if touch() != 'fruit' and right_side() == 'fruit':
     turn(1)
-    move()
   
   #elif right_side() == 'fruit':
    # turn(1)
