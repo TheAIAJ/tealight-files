@@ -7,8 +7,8 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-
-while True:
+i = 0
+while i < 400:
   if touch() == 'fruit':
     move()
   #print(touch())
