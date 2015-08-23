@@ -31,4 +31,4 @@ def segment(scale, detail):
     
     
       
-segment(100,5)
+segment(100,4)
