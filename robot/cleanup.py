@@ -43,5 +43,6 @@ while i < 500:
 """
 
 
-for i in range(0, 3):
+for i in range(0, 4):
   move()
+turn(-1)
