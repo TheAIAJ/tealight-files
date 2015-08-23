@@ -10,12 +10,12 @@ def segment(scale, detail):
   
   else:
     move(scale)
-    if True:
-      turn(45)
-      segment(scale / 2, detail - 1)
-      turn(-90)
-      segment(scale / 2, detail - 1)
-      turn(45)
+    
+    turn(45)
+    segment(scale / 2, detail - 1)
+    turn(-90)
+    segment(scale / 2, detail - 1)
+    turn(45)
     move(-scale)
 move(-200)    
 segment(200,10)
