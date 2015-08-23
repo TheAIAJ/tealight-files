@@ -7,19 +7,22 @@ def segment(scale, detail):
   
   if detail == 0:
     None
+  
   else:
+    move(scale)
+    if scale > 5:
+      turn(45)
+      segment(scale / 2, detail - 1)
+      turn(-90)
+      segment(scale / 2, detail - 1)
+      turn(45)
+    move(-scale)
     
-    turn(-45)
-    move(scale / 2)
-    move(-scale / 2)
-    turn(90)
-    move(scale / 2)
-    move(-scale / 2)
-    turn(-90)
-    segment(scale / 2, detail - 1)
+  
+
 
     
     
     
-move(100)
+#move(100)
 segment(100,4)
