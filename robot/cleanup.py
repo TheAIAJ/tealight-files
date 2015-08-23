@@ -41,8 +41,10 @@ while i < 500:
  
   i+= 1
 """
+def m(num):
+  for i in range(0, num):
+    move()
 
-
-for i in range(0, 4):
-  move()
+m(4)
 turn(-1)
+m(1)
