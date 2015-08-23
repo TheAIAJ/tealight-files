@@ -22,7 +22,7 @@ def segment(scale, detail):
     
   
     turn(90)
-    #segment(scale / 2, detail - 1)
+    segment(scale / 2, detail - 1)
     
     
     
