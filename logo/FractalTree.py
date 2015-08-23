@@ -12,6 +12,10 @@ def branchesRight(scale):
 def branchesLeft(scale):
   turn(-45)
   move(scale)
+  turn(180)
+  move(scale)
+  turn(-90)
+  move(scale)
   
 
 def segment(scale, detail):
