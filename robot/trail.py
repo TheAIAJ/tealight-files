@@ -12,19 +12,21 @@ t = 1
 while i < 400:
   if touch() == 'fruit':
     move()
+    count += 1
   
   elif right_side() == 'fruit':
     turn(1)
-    t += 1
+    count += 1
   elif left_side() == 'fruit':
     turn(-1)
-    t -= 1
+    count += 1
   elif touch() != 'fruit' and left_side() != 'fruit' and right_side() != 'fruit':
     move()
+    count += 1
     for i in range(0, 4):
       turn(1)
-      t += 1
-      if t == 3:
+      count += 1
+      if count == 350:
         move()
       if touch() == 'fruit':
         break
