@@ -8,6 +8,9 @@ from tealight.robot import (move,
 
 i = 0
 while i < 500:
+  
+  oneSide = right_side() == 'fruit' or left_side() == 'fruit'
+  
   if touch() == 'fruit':
     move()
   
