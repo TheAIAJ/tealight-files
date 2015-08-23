@@ -9,6 +9,8 @@ from tealight.robot import (move,
 i = 0
 while i < 500:
   
+  twoSide = right_side() == 'fruit' and left_side() == 'fruit'
+  
   oneSide = right_side() == 'fruit' or left_side() == 'fruit'
   
   noSide = right_side() != 'fruit' and left_side() != 'fruit'
@@ -19,6 +21,9 @@ while i < 500:
   if touch() == 'fruit' and noSide:
     move()
   
+  if touch() == 'fruit' and twoSide:
+    turn(1)
+    
   if touch() != 'fruit' and left_side() == 'fruit':
     turn(-1)
   
