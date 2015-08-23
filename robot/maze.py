@@ -13,7 +13,7 @@ while i < 1250:
     turn(-1)
     
   elif left_side() != 'wall' and touch() != 'wall':
-    
+    move()
   
   elif left_side() != 'wall':
     turn(-1)
