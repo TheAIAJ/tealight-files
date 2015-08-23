@@ -11,7 +11,7 @@ while i < 500:
   #if look() == 'fruit':
    # move()
   
-  elif right_side() == 'fruit':
+  if right_side() == 'fruit':
     turn(1)
   
   elif left_side() == 'fruit':
