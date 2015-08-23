@@ -30,5 +30,5 @@ def segment(scale, detail):
     segment(scale / 2, detail - 1)
     
     
-      
+move(100)      
 segment(100,4)
