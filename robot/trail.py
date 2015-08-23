@@ -17,7 +17,7 @@ while i < 400:
   elif left_side() == 'fruit':
     turn(-1)
   elif touch() != 'fruit' and left_side() != 'fruit' and right_side() != 'fruit':
-    for i in range(0, 4):
+    for i in range(0, 2):
       turn(1)
       if touch() == 'fruit':
         break
