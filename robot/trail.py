@@ -26,7 +26,7 @@ while i < 400:
     for i in range(0, 4):
       turn(1)
       count += 1
-      if count == 362:
+      if count == 361:
         turn(-1)
         
       if touch() == 'fruit':
