@@ -23,7 +23,6 @@ def segment(scale, detail):
   if detail == 0:
     None
   else:
-    move(scale)
     
     branchesRight(scale)
     branchesLeft(scale)
