@@ -5,6 +5,9 @@ from tealight.logo import move, turn
 def branchesRight(scale):
   turn(45)
   move(scale)
+  turn(180)
+  move(scale)
+  turn(135)
   
 def branchesLeft(scale):
   turn(-45)
