@@ -6,6 +6,7 @@ def segment(scale, detail):
   
   if detail == 0:
     #move(scale)
+    None
   else:
     for i in range(0, 3):
       move(scale)
