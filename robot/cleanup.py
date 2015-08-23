@@ -11,7 +11,7 @@ while i < 500:
   
   oneSide = right_side() == 'fruit' or left_side() == 'fruit'
   
-  if touch() == 'fruit':
+  if touch() == 'fruit' and oneSide:
     move()
   
   elif right_side() == 'fruit':
