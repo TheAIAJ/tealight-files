@@ -16,4 +16,4 @@ def segment(scale, detail, angle):
     segment(scale / 2, detail - 1, -45)
     
       
-segment(100,1,0)
+segment(100,1,45)
