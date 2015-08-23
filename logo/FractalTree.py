@@ -18,7 +18,8 @@ def segment(scale, detail):
   else:
     move(scale)
     
-    
+    branchesRight(scale)
+    branchesLeft(scale)
     
     segment(scale / 2, detail - 1)
     
