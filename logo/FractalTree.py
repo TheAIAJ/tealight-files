@@ -5,11 +5,10 @@ from tealight.logo import move, turn
 def segment(scale, detail):
   
   if detail == 0:
-    move(scale)
+    None
   else:
     for i in range(0, 2):
-      turn(-45)
-      segment(scale / 2, detail - 1)
+      move(scale)
       turn(45)
       segment(scale / 2, detail - 1)
 
