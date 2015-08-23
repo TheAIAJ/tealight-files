@@ -5,11 +5,11 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
-"""
+
 i = 0
 while i < 500:
-  if look() == 'fruit':
-    move()
+  #if look() == 'fruit':
+   # move()
   
   elif right_side() == 'fruit':
     turn(1)
@@ -22,5 +22,3 @@ while i < 500:
     move()
   
   i+= 1
-"""
-
