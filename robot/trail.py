@@ -21,7 +21,7 @@ while i < 400:
   elif touch() != 'fruit' and left_side() != 'fruit' and right_side() != 'fruit':
     move()
     for i in range(0, 4):
-      turn(1)
+      turn(-1)
       if touch() == 'fruit' or left_side() == 'fruit' or right_side() == 'fruit':
         break
         
