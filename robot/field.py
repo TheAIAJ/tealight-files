@@ -7,4 +7,6 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-move()
+i = 400
+while i < 400:
+  
