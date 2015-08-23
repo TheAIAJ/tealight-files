@@ -22,7 +22,6 @@ while i < 400:
       turn(1)
       if touch() == 'fruit':
         break
-    move()
   i += 1
 
 
