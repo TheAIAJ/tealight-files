@@ -10,10 +10,5 @@ def segment(scale, detail):
     for i in range(0, 2):
       move(scale)
       turn(45)
-      segment(scale / 2, detail - 1)
-      turn(180)
-      move(scale)
-      #turn(90)
-      #move(scale)
-
+      
 segment(100,1)
