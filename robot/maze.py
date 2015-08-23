@@ -9,7 +9,7 @@ from tealight.robot import (move,
 # Add your code here
 i = 0
 while i < 1250:
-  if touch() == 'fruit':
+  if touch() == 'wall':
     turn(1)
     
   else:
