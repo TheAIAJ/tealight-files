@@ -18,16 +18,15 @@ while i < 500:
   if touch() == 'fruit' and oneSide:
     move()
     
-  if touch() == 'fruit' and noSide:
+  elif touch() == 'fruit' and noSide:
     move()
   
-  if touch() == 'fruit' and twoSide:
-    turn(1)
+  
     
-  if touch() != 'fruit' and left_side() == 'fruit':
+  elif touch() != 'fruit' and left_side() == 'fruit':
     turn(-1)
   
-  if touch() != 'fruit' and right_side() == 'fruit':
+  elif touch() != 'fruit' and right_side() == 'fruit':
     turn(1)
   
   #elif right_side() == 'fruit':
@@ -42,4 +41,7 @@ while i < 500:
   
   elif touch() != 'fruit' and look() == 'fruit':
     move()
+  
+  elif touch() == 'fruit' and twoSide:
+    turn(1)
   i+= 1
