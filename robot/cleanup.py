@@ -45,16 +45,27 @@ def m(num):
   for i in range(0, num):
     move()
 
+    
+def r():
+  turn(1)
+  
+def l():
+  turn(-1)
+  
 m(4)
-turn(-1)
+l()
 m(1)
-turn(-1)
+l()
 m(6)
-turn(1)
+r()
 m(1)
-turn(1)
+r()
 m(9)
-turn(-1)
+l()
 m(1)
-turn(-1)
-m(10)
+l()
+m(11)
+r()
+m(1)
+r()
+m(13)
