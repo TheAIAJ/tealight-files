@@ -15,14 +15,17 @@ while i < 400:
   
   elif right_side() == 'fruit':
     turn(1)
-  
+    turn += 1
   elif left_side() == 'fruit':
     turn(-1)
-  
+    turn -= 1
   elif touch() != 'fruit' and left_side() != 'fruit' and right_side() != 'fruit':
     move()
     for i in range(0, 4):
       turn(1)
+      turn += 1
+      if turn == 3:
+        moev()
       if touch() == 'fruit':
         break
   
