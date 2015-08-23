@@ -14,3 +14,6 @@ while i < 1111:
   
   elif left_side() == 'fruit':
     turn(-1)
+  
+  
+  i += 1
