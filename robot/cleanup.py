@@ -23,10 +23,10 @@ while i < 500:
   
   
     
-  elif touch() != 'fruit' and left_side() == 'fruit':
+  if touch() != 'fruit' and left_side() == 'fruit':
     turn(-1)
   
-  elif touch() != 'fruit' and right_side() == 'fruit':
+  if touch() != 'fruit' and right_side() == 'fruit':
     turn(1)
   
   #elif right_side() == 'fruit':
@@ -35,13 +35,13 @@ while i < 500:
   #elif left_side() == 'fruit':
    # turn(-1)
   
-  elif noSide and look() != 'fruit':
+  if noSide and look() != 'fruit':
     turn(-1)
     move()
   
-  elif touch() != 'fruit' and look() == 'fruit':
+  if touch() != 'fruit' and look() == 'fruit':
     move()
   
-  elif touch() == 'fruit' and twoSide:
+  if touch() == 'fruit' and twoSide:
     turn(1)
   i+= 1
