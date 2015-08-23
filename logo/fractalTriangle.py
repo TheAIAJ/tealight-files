@@ -7,11 +7,7 @@ def segment(scale, detail):
   if detail == 0:
     move(scale)
   else:
-    turn(-90)
-    move(50)
-
+    move(10)
 
 turn(90)
-move(-300)
 segment(600,3)
-move(-300)
