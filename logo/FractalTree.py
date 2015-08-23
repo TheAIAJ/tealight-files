@@ -27,4 +27,4 @@ def segment(scale, detail):
     
     
 #move(100)
-segment(100,2)
+segment(100,3)
