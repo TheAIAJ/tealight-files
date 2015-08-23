@@ -12,6 +12,9 @@ while i < 400:
   if touch() == 'fruit':
     move()
   
+  elif right_side() == 'fruit':
+    turn(1)
+  
   i += 1
 
 
