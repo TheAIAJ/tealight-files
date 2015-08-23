@@ -27,8 +27,8 @@ while i < 400:
       turn(1)
       count += 1
       if count == 362:
-        move()
-        move()
+        turn(-1)
+        
       if touch() == 'fruit':
         break
   
