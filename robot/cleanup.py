@@ -28,7 +28,7 @@ while i < 500:
     move()
     
   if touch() == 'fruit' and twoSide:
-    turn(-1)
+    turn(1)
   
   if touch() != 'fruit' and left_side() == 'fruit':
     turn(-1)
