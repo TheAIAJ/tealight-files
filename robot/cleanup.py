@@ -5,7 +5,7 @@ from tealight.robot import (move,
                             smell, 
                             left_side, 
                             right_side)
-
+"""
 i = 0
 while i < 500:
   
@@ -40,3 +40,9 @@ while i < 500:
     turn(1)
  
   i+= 1
+"""
+
+i = 0
+while i < 500:
+  for i in range(0, 3):
+    move()
