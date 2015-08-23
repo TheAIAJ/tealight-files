@@ -9,6 +9,7 @@ def segment(scale, detail):
     None
   else:
     
+    move(scale)
     turn(-45)
     
     segment(scale / 2, detail - 1)
