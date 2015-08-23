@@ -48,3 +48,5 @@ def m(num):
 m(4)
 turn(-1)
 m(1)
+turn(-1)
+m(5)
