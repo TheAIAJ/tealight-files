@@ -28,10 +28,7 @@ def segment(scale, detail):
     branchesLeft(scale)
     
     segment(scale / 2, detail - 1)
-    branchesRight(scale)
-    turn(-45)
-    move(scale)
-    segment(scale / 2, detail - 1)
+    
     
     
 move(100)      
