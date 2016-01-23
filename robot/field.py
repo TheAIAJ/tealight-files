@@ -8,5 +8,7 @@ from tealight.robot import (move,
 
 # Add your code here
 i = 400
-while i < 400:
+for i in range(400):
+  if look() == true:
+    move()
   
